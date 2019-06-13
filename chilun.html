@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>齿轮</title>
+		<style type="text/css">
+			html,body,div{
+				margin: 0;
+				padding: 0;
+			}
+			.wutai{
+				width: 700px;
+				height: 500px;
+				border: 1px solid black;
+				margin: 0 auto;
+				position: relative;
+			}
+			
+			.chilun{
+				width: 60px;
+				height: 60px;
+				background: black;
+				border-radius: 50%;
+				position: absolute;
+			}
+			
+			.chilun3{
+				width: 120px;
+				height: 120px;
+				background: black;
+				border-radius: 50%;
+				position: absolute;
+			}
+			
+			.one{
+				top: 47px;
+				left: 53px;
+				animation: xuanzhuan 1.5s linear infinite;
+			}
+			.two{
+				top:97px;
+				left: 104px;
+				animation: xuanzhuan2 1.5s linear infinite;
+			}
+			.three{
+				top: 102px;
+				left: 173px;
+				animation: xuanzhuan3 3s linear infinite;
+			}
+			@keyframes xuanzhuan{
+				0%{transform: rotate(0deg);}
+				100%{transform: rotateZ(360deg);}
+			}
+			@keyframes xuanzhuan2{
+				0%{transform: rotate(0deg);}
+				100%{transform: rotateZ(-360deg);}
+			}
+			@keyframes xuanzhuan3{
+				0%{transform: rotate(0deg);}
+				100%{transform: rotateZ(360deg);}
+			}
+			
+			.box{
+				width: 16px;
+				height: 80px;
+				background: black;
+				position: absolute;
+				left: calc(50% - 8px);
+				top: calc(50% - 40px);
+			}
+			.box:nth-child(2){
+				transform: rotateZ(60deg);
+			}
+			.box:nth-child(3){
+				transform: rotateZ(120deg);
+			}
+			.box1{
+				width: 16px;
+				height: 140px;
+				background: black;
+				position: absolute;
+				left: calc(50% - 8px);
+				top: calc(50% - 70px);
+			}
+			.box1:nth-child(2){
+				transform: rotateZ(30deg);
+			}
+			.box1:nth-child(3){
+				transform: rotateZ(60deg);
+			}
+			.box1:nth-child(4){
+				transform: rotateZ(90deg);
+			}
+			.box1:nth-child(5){
+				transform: rotateZ(120deg);
+			}
+			.box1:nth-child(6){
+				transform: rotateZ(150deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wutai">
+			
+			<div class="chilun one">
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+			</div>
+			
+			<div class="chilun two">
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+			</div>
+			
+			<div class="chilun3 three">
+				<div class="box1"></div>
+				<div class="box1"></div>
+				<div class="box1"></div>
+				<div class="box1"></div>
+				<div class="box1"></div>
+				<div class="box1"></div>
+			</div>
+			
+		</div>
+		
+		<div style="width: 500px; margin: 0 auto;text-align: center;">
+			<a href="mofang.html">魔方</a>
+			<a href="lititu.html">立体图</a>
+			<a href="yuanzhu.html">圆柱</a>
+			<a href="chilun.html">齿轮</a>
+		</div>
+	</body>
+</html>

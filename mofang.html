@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>魔方</title>
+		
+		<style type="text/css">
+			html,body{
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+			}
+			.wutai{
+				width: 100%;
+				height: 100%;
+				border: 1px solid black;
+				/* background: black; */
+				margin: 0 auto;
+			}
+			.mofang{
+				width: 100px;
+				height: 100px;
+				
+				/* perspective: 2500px;
+				perspective-origin:-500% -550%; */
+				
+				transform-style: preserve-3d;
+				animation: texiao 10s linear infinite alternate;
+			}
+			
+			.box{
+				width: 90px;
+				height: 90px;
+				margin: 100px;
+				text-align: center;
+				line-height: 30px;
+				display: grid;
+				grid-template-columns: 30px 30px 30px;
+				grid-template-rows:30px 30px 30px;
+				
+				position: absolute;
+				
+			}
+			.box .box1{
+				border: 1px solid white;
+				background: #AACCEE;
+			}
+			.box .box2{
+				border: 1px solid white;
+				background: #FF9966;
+			}
+			.box .box3{
+				border: 1px solid white;
+				background: #00FFFF;
+			}
+			.box .box4{
+				border: 1px solid white;
+				background: #FF0000;
+			}
+			.box .box5{
+				border: 1px solid white;
+				background: #FFFF00;
+			}
+			.box .box6{
+				border: 1px solid white;
+				background: blueviolet;
+			}
+			
+			/* 后 */
+			.mian1{
+				transform: translateZ(-45px);
+			}
+			/* 左 */
+			.mian2{
+				transform: translateX(-45px) rotateY(90deg);
+			}
+			/* 上 */
+			.mian3{
+				transform: translateY(-45px) rotateX(90deg);
+			}
+			/* 右 */
+			.mian4{
+				transform: translateX(45px) rotateY(90deg);
+			}
+			/* 下 */
+			.mian5{
+				transform: translateY(45px) rotateX(90deg);
+			}
+			/* 前 */
+			.mian6{
+				transform: translateZ(45px);
+			}
+			
+			
+			@keyframes texiao{
+				0%{transform: translate(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
+				50%{transform: translate(400px) rotateX(0deg) rotateY(360deg) rotateZ(90deg);}
+				100%{transform: translate(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="wutai">
+			
+			<div class="mofang">
+				
+				<div class="box mian1">
+					<div class="box1">1</div>
+					<div class="box1">2</div>
+					<div class="box1">3</div>
+					<div class="box1">4</div>
+					<div class="box1">5</div>
+					<div class="box1">6</div>
+					<div class="box1">7</div>
+					<div class="box1">8</div>
+					<div class="box1">9</div>
+				</div>
+				
+				<div class="box mian2">
+					<div class="box2">1</div>
+					<div class="box2">2</div>
+					<div class="box2">3</div>
+					<div class="box2">4</div>
+					<div class="box2">5</div>
+					<div class="box2">6</div>
+					<div class="box2">7</div>
+					<div class="box2">8</div>
+					<div class="box2">9</div>
+				</div>
+				
+				<div class="box mian3">
+					<div class="box3">1</div>
+					<div class="box3">2</div>
+					<div class="box3">3</div>
+					<div class="box3">4</div>
+					<div class="box3">5</div>
+					<div class="box3">6</div>
+					<div class="box3">7</div>
+					<div class="box3">8</div>
+					<div class="box3">9</div>
+				</div>
+				
+				<div class="box mian4">
+					<div class="box4">1</div>
+					<div class="box4">2</div>
+					<div class="box4">3</div>
+					<div class="box4">4</div>
+					<div class="box4">5</div>
+					<div class="box4">6</div>
+					<div class="box4">7</div>
+					<div class="box4">8</div>
+					<div class="box4">9</div>
+				</div>
+				
+				<div class="box mian5">
+					<div class="box5">1</div>
+					<div class="box5">2</div>
+					<div class="box5">3</div>
+					<div class="box5">4</div>
+					<div class="box5">5</div>
+					<div class="box5">6</div>
+					<div class="box5">7</div>
+					<div class="box5">8</div>
+					<div class="box5">9</div>
+				</div>
+				
+				<div class="box mian6">
+					<div class="box6">1</div>
+					<div class="box6">2</div>
+					<div class="box6">3</div>
+					<div class="box6">4</div>
+					<div class="box6">5</div>
+					<div class="box6">6</div>
+					<div class="box6">7</div>
+					<div class="box6">8</div>
+					<div class="box6">9</div>
+				</div>
+				
+				
+			</div>
+			
+			<div style="width: 500px; margin: 0 auto;text-align: center;">
+				<a href="mofang.html">魔方</a>
+				<a href="lititu.html">立体图</a>
+				<a href="yuanzhu.html">圆柱</a>
+				<a href="chilun.html">齿轮</a>
+			</div>
+			
+		</div>
+	</body>
+</html>
+
+
+
+
+

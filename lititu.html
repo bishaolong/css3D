@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>立体图</title>
+		
+		<style type="text/css">
+			.wutai{
+				width: 700px;
+				height: 500px;
+				border: 1px solid black;
+				background: black;
+				margin: 0 auto;
+				
+				/*******/
+				perspective: 3000px;
+				perspective-origin:-100% -150%;
+				/******/
+			}
+			.mofang{
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				top: calc(50% - 50px);
+				left: calc(50% - 50px);
+				
+				/******/
+				perspective: 3000px;
+				perspective-origin:-100% -150%;
+				
+				transition: all 500s linear;
+				transform-style: preserve-3d;
+				/******/
+			}
+			.box{
+				width: 100px;
+				height: 100px;
+				text-align: center;
+				line-height: 100px;
+				/* color: white; */
+				font-size: 20px;
+				font-weight: bold;
+				background: rgba(0,0,0,0.5);
+				border: 2px solid black;
+				position: absolute;
+				
+				/******/
+				transition: all 10s linear;
+				/******/
+			}
+			
+			/* 后 */
+			.mian1{
+				transform: translateZ(-50px);
+			}
+			/* 上 */
+			.mian2{
+				transform: translateY(-50px) rotateX(90deg);
+			}
+			/* 左 */
+			.mian3{
+				transform: translateX(-50px) rotateY(90deg);
+			}
+			/* 前 */
+			.mian4{
+				transform: translateZ(50px);
+			}
+			/* 右 */
+			.mian5{
+				transform: translateX(50px) rotateY(90deg);
+			}
+			/* 下 */
+			.mian6{
+				transform: translateY(50px) rotateX(90deg);
+			}
+			
+			.xiaomofang{
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				top: calc(50% - 25px);
+				left: calc(50% - 25px);
+				
+				perspective: 3000px;
+				perspective-origin:-100% -150%;
+				
+				/******/
+				transform-style: preserve-3d;
+				transition: all 100s linear;
+				/******/
+			}
+			
+			.box1{
+				width: 50px;
+				height: 50px;
+				text-align: center;
+				line-height: 50px;
+				font-size: 20px;
+				font-weight: bold;
+				background: rgba(255,255,255,0.2);
+				border: 2px solid black;
+				
+				transform-style: preserve-3d;
+				
+				position: absolute;
+			}
+			/* 里 后 */
+			.xiaomofang .mian7{
+				transform: translateZ(-27px);
+			}
+			/* 里 上 */
+			.xiaomofang .mian8{
+				transform: translateY(-27px) rotateX(90deg);
+			}
+			/* 里 左 */
+			.xiaomofang .mian9{
+				transform: translateX(-27px) rotateY(90deg);
+			}
+			/* 里 前 */
+			.xiaomofang .mian10{
+				transform: translateZ(27px);
+			}
+			/* 里 下 */
+			.xiaomofang .mian11{
+				transform: translateY(27px) rotateX(90deg);
+			}
+			/* 里 右 */
+			.xiaomofang .mian12{
+				transform: translateX(27px) rotateY(90deg);
+			}
+			
+			
+			.mofang:hover .mian1{
+				transform: translateZ(-170px);
+				background: #00FFFF;
+				opacity: 0.7;
+				color: white;
+			}
+			.mofang:hover .mian2{
+				transform: translateY(-170px) rotateX(90deg);
+				background: #AACCEE;
+				opacity: 0.7;
+				color: white;
+			}
+			.mofang:hover .mian3{
+				transform: translateX(-170px) rotateY(90deg);
+				background: #DCDCDC;
+				opacity: 0.7;
+				color: white;
+			}
+			.mofang:hover .mian4{
+				transform: translateZ(170px);
+				background: #FF0000;
+				opacity: 0.7;
+				color: white;
+			}
+			.mofang:hover .mian5{
+				transform: translateX(170px) rotateY(90deg);
+				background: #FFD700;
+				opacity: 0.7;
+				color: white;
+			}
+			.mofang:hover .mian6{
+				transform: translateY(170px) rotateX(90deg);
+				background: #FF00FF;
+				opacity: 0.7;
+				color: white;
+			}
+			
+			.mofang:hover{
+				transform: rotateX(36000deg);
+			}
+			
+			.mofang:hover .xiaomofang{
+				transform: rotateX(9000deg) rotateY(18000deg) rotateZ(36000deg);
+			}		
+		</style>
+		
+	</head>
+	<body>
+		<div class="wutai">
+			<div class="mofang">
+				<div class="box mian1">1</div>
+				<div class="box mian2">2</div>
+				<div class="box mian3">3</div>
+				<div class="box mian4">4</div>
+				<div class="box mian5">5</div>
+				<div class="box mian6">6</div>
+				
+				<div class="xiaomofang">
+					<div class="box1 mian7">7</div>
+					<div class="box1 mian8">8</div>
+					<div class="box1 mian9">9</div>
+					<div class="box1 mian10">10</div>
+					<div class="box1 mian11">11</div>
+					<div class="box1 mian12">12</div>
+				</div>
+			</div>
+		</div>
+		<div style="width: 500px; margin: 0 auto;text-align: center;">
+			<a href="mofang.html">魔方</a>
+			<a href="lititu.html">立体图</a>
+			<a href="yuanzhu.html">圆柱</a>
+			<a href="chilun.html">齿轮</a>
+		</div>
+		
+	</body>
+</html>

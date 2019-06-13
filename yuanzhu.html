@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>圆柱</title>
+		 <style>
+		    .wutai{
+		        width: 900px;
+		        height: 600px;
+		        border: 1px solid;
+		        margin: 0px auto;
+		
+		        perspective: 1000px;
+		        perspective-origin: 50% 1%;
+		    }
+			
+		    .wutai .yuanzhu{
+		        width: 100px;
+		        height: 300px;
+		        margin: 0 auto;
+		        position: relative;
+		        top: 150px;
+		        border: 0px solid red;
+		
+		        transform-style: preserve-3d;
+		    }
+		
+		    .yuanzhu:hover{
+		        transform: rotateY(36000000deg);
+		        transition: all 1000000s linear;
+			   
+		    }
+		
+		    .wutai .yuanzhu .box{
+		        width: 100px;
+		        height:300px;
+		        text-align: center;
+		        line-height: 300px;
+		        font-size: 40px;
+		        color: white;
+		        position: absolute;
+		    }
+		
+		    .mian1{
+		        background: red;
+		        transform: rotateY(30deg) translateZ(200px) ;
+		    }
+		    .mian2{
+		        background: orange;
+		        transform: rotateY(60deg) translateZ(200px);
+		    }
+		    .mian3{
+		        background: yellow;
+		        transform: rotateY(90deg) translateZ(200px);
+		    }
+		    .mian4{
+		        background: green;
+		        transform: rotateY(120deg) translateZ(200px);
+		    }
+		    .mian5{
+		        background: cyan;
+		        transform: rotateY(150deg) translateZ(200px);
+		    }
+		    .mian6{
+		        background: blue;
+		        transform: rotateY(180deg) translateZ(200px);
+		    }
+		    .mian7{
+		        background: purple;
+		        transform: rotateY(210deg) translateZ(200px);
+		    }
+		    .mian8{
+		        background: blue;
+		        transform: rotateY(240deg) translateZ(200px);
+		    }
+		    .mian9{
+		        background: cyan;
+		        transform: rotateY(270deg) translateZ(200px);
+		    }
+		    .mian10{
+		        background: green;
+		        transform: rotateY(300deg) translateZ(200px);
+		    }
+		    .mian11{
+		        background: yellow;
+		        transform: rotateY(330deg) translateZ(200px);
+		    }
+		    .mian12{
+		        background: orange;
+		        transform: rotateY(360deg) translateZ(200px);
+		    }
+		
+		</style>
+		
+	</head>
+	<body>
+		<div class="wutai">
+		
+			<div class="yuanzhu">
+				<div class="box mian1">1</div>
+				<div class="box mian2">2</div>
+				<div class="box mian3">3</div>
+				<div class="box mian4">4</div>
+				<div class="box mian5">5</div>
+				<div class="box mian6">6</div>
+				<div class="box mian7">7</div>
+				<div class="box mian8">8</div>
+				<div class="box mian9">9</div>
+				<div class="box mian10">10</div>
+				<div class="box mian11">11</div>
+				<div class="box mian12">12</div>
+			</div>
+		</div>
+		<div style="width: 500px; margin: 0 auto;text-align: center;">
+			<a href="mofang.html">魔方</a>
+			<a href="lititu.html">立体图</a>
+			<a href="yuanzhu.html">圆柱</a>
+			<a href="chilun.html">齿轮</a>
+		</div>
+	</body>
+</html>
